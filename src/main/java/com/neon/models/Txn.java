@@ -2,11 +2,7 @@ package com.neon.models;
 
 import java.util.List;
 
-enum TxnStatus {
- PENDING,
- CONFIRMED,
- DECLINED
-}
+import com.neon.models.enums.TxnStatus;
 
 @SuppressWarnings("serial")
 public class Txn implements java.io.Serializable {
@@ -56,8 +52,8 @@ public class Txn implements java.io.Serializable {
  public String toString() {
   return String.format(
    "{ txnInputs: %s, txnOutputs: %s, txnHash: %s, txnSignature: %s, txnStatus: %s }",
-   txnInputs.toString(),
-   txnOutputs.toString(),
+   txnInputs,
+   txnOutputs,
    txnHash,
    txnSignature,
    txnStatus

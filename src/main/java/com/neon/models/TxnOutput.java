@@ -19,4 +19,13 @@ public class TxnOutput implements java.io.Serializable {
  public Double getAmount() {
   return amount;
  }
+
+ @Override
+ public String toString() {
+  return String.format(
+   "{ address: %s, amount: %d }",
+   this.getAddress(),
+   this.getAmount()
+  );
+ }
 }
