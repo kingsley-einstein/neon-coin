@@ -45,7 +45,7 @@ public class Crypto {
 
    return new NKeyPair(
     hex2.toString(), 
-    "NE:" + hex1.toString()
+    hex1.toString()
    );
   } catch (Exception e) {
    throw new Exception(e.getMessage());
@@ -70,7 +70,7 @@ public class Crypto {
    return new KeyConfluence(
     keyPair.getPublicKey(), 
     keyPair.getPrivateKey(), 
-    hex.toString()
+    "NE:" + hex.toString()
    );
   } catch (Exception e) {
    throw new Exception(e.getMessage());

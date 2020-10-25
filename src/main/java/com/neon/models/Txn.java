@@ -40,8 +40,16 @@ public class Txn implements java.io.Serializable {
   return txnHash;
  }
 
+ public void setTxnSignature(String txnSignature) {
+  this.txnSignature = txnSignature;
+ }
+
  public String getTxnSignature() {
   return txnSignature;
+ }
+
+ public void setTxnStatus(TxnStatus txnStatus) {
+  this.txnStatus = txnStatus;
  }
 
  public TxnStatus getTxnStatus() {

@@ -32,7 +32,7 @@ public class Wallet implements java.io.Serializable {
   return publicKey;
  }
 
- public String privateKey() {
+ public String getPrivateKey() {
   return privateKey;
  }
 }
